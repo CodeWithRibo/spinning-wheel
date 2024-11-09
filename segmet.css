@@ -1,0 +1,28 @@
+.segment {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    background-color: #1283f3;
+    transform-origin: 0% 0%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    transform: rotate(calc(var(--i) * 120deg)) translate(-100%, -100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+}
+.wheel {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #1283f3;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
