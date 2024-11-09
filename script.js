@@ -1,11 +1,15 @@
 function spin() {
   const wheel = document.getElementById("wheel");
+  const resultDiv = document.getElementById("result");
   const segments = 3;
+
+  //! bago i-spin by default naka none yung result
+  resultDiv.style.display = "none";
 
   //!dito pwede natin i-define kung ano ang chance of winning using percentage
   const probabilities = [
-    { segment: `Choeey Choco`, probability: 0.9 }, //! 70%
-    { segment: `Mystery Gift`, probability: 0.25 }, //! 20%
+    { segment: `Choeey Choco`, probability: 0.9 }, //! 90%
+    { segment: `Mystery Gift`, probability: 0.25 }, //! 25%
     { segment: `Chichirya ni Bon`, probability: 0.01 }, //! 1%
   ];
 
@@ -47,7 +51,7 @@ function spin() {
   wheel.style.transform = `rotate(${spinDegree}deg)`;
 
   setTimeout(() => {
-    const resultDiv = document.getElementById("result");
+    resultDiv.style.display = "block"; //!showing text after spinning
     resultDiv.innerHTML = `You won: Prize ${targetSegment}`;
   }, 4000); //!durating time ng spinning wheel
 }
