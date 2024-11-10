@@ -8,8 +8,8 @@ function spin() {
 
   //!dito pwede natin i-define kung ano ang chance of winning using percentage
   const probabilities = [
-    { segment: `Choeey Choco`, probability: 0.6 }, //! 80%
-    { segment: `Mystery Gift`, probability: 0.4 }, //! 30%
+    { segment: `Choeey Choco`, probability: 0.6 }, //! 60%
+    { segment: `Mystery Gift`, probability: 0.4 }, //! 40%
     { segment: `Chichirya ni Bon`, probability: 0.01 }, //! 1%
   ];
 
